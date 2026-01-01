@@ -19,6 +19,7 @@ jobs:
           echo "Creating rules-src folder and .keep file"
           mkdir -p rules-src
           touch rules-src/.keep
+          echo "Adding rules-src/.keep to Git"
           git add rules-src/.keep
           git commit -m "Add .keep file in rules-src to track folder" || echo "No changes to commit"
           git push || echo "Nothing to push"
@@ -28,6 +29,7 @@ jobs:
           echo "Creating rules folder and .keep file"
           mkdir -p rules
           touch rules/.keep
+          echo "Adding rules/.keep to Git"
           git add rules/.keep
           git commit -m "Add .keep file in rules to track folder" || echo "No changes to commit"
           git push || echo "Nothing to push"
