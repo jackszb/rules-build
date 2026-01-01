@@ -46,11 +46,13 @@ jobs:
       - name: Compile json → srs
         run: |
           for file in rules-src/*.json; do
-            name=$(basename "$file" .json)
-            echo "Compiling $file → rules/$name.srs"
-            if ! ./sing-box rule-set compile "$file" -o "rules/$name.srs"; then
-              echo "Error compiling $file"
-              exit 1
+            if [ -f "$file" ]; then
+              name=$(basename "$file" .json)
+              echo "Compiling $file → rules/$name.srs"
+              if ! ./sing-box rule-set compile "$file" -o "rules/$name.srs"; then
+                echo "Error compiling $file"
+                exit 1
+              fi
             fi
           done
 
