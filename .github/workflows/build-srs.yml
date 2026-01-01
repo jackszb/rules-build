@@ -16,11 +16,13 @@ jobs:
 
       - name: Create rules-src folder and .keep file
         run: |
+          echo "Creating rules-src folder and .keep file"
           mkdir -p rules-src
           touch rules-src/.keep
 
       - name: Create rules folder and .keep file
         run: |
+          echo "Creating rules folder and .keep file"
           mkdir -p rules
           touch rules/.keep
 
@@ -45,6 +47,7 @@ jobs:
 
       - name: Compile json → srs
         run: |
+          echo "Compiling JSON files in rules-src to srs files in rules directory"
           for file in rules-src/*.json; do
             if [ -f "$file" ]; then
               name=$(basename "$file" .json)
