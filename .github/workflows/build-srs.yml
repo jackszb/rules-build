@@ -14,6 +14,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Set git user information
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "github-actions@github.com"
+
       - name: Create rules-src folder and .keep file
         run: |
           echo "Creating rules-src folder and .keep file"
@@ -76,8 +81,6 @@ jobs:
       - name: Commit srs if files exist
         run: |
           if ls rules/*.srs 1>/dev/null 2>&1; then
-            git config user.name "github-actions"
-            git config user.email "github-actions@github.com"
             git add rules/*.srs
             git commit -m "build: update rule-set srs" || echo "No changes to commit"
             git push || echo "Nothing to push"
