@@ -19,12 +19,18 @@ jobs:
           echo "Creating rules-src folder and .keep file"
           mkdir -p rules-src
           touch rules-src/.keep
+          git add rules-src/.keep
+          git commit -m "Add .keep file in rules-src to track folder" || echo "No changes to commit"
+          git push || echo "Nothing to push"
 
       - name: Create rules folder and .keep file
         run: |
           echo "Creating rules folder and .keep file"
           mkdir -p rules
           touch rules/.keep
+          git add rules/.keep
+          git commit -m "Add .keep file in rules to track folder" || echo "No changes to commit"
+          git push || echo "Nothing to push"
 
       - name: Install latest stable sing-box
         run: |
