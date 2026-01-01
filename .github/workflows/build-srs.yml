@@ -64,10 +64,14 @@ jobs:
             hexdump -C "$f" | head
           done
 
-      - name: Commit srs
+      - name: Commit srs if files exist
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add rules/*.srs
-          git commit -m "build: update rule-set srs" || echo "No changes to commit"
-          git push || echo "Nothing to push"
+          if ls rules/*.srs 1>/dev/null 2>&1; then
+            git config user.name "github-actions"
+            git config user.email "github-actions@github.com"
+            git add rules/*.srs
+            git commit -m "build: update rule-set srs" || echo "No changes to commit"
+            git push || echo "Nothing to push"
+          else
+            echo "No .srs files to commit"
+          fi
