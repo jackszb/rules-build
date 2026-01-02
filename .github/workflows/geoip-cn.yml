@@ -17,11 +17,11 @@ jobs:
             https://raw.githubusercontent.com/jackszb/rules-build/main/china_ip_list.txt \
             -o china_ip_list.txt
 
-      - name: Normalize IPv4 list
+      - name: Normalize IPv4 list (dedupe + numeric sort)
         run: |
-          sed '/^\s*$/d' china_ip_list.txt | sort -u > ip.txt
+          sed '/^\s*$/d' china_ip_list.txt | sort -Vu > ip.txt
 
-      - name: Generate geoip-cn.json
+      - name: Generate geoip-cn.json (jq)
         run: |
           jq -Rn '
             [inputs] |
