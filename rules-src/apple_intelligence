@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "guzzoni.apple.com",
+        "smoot.apple.com",
+        "apple-relay.apple.com",
+        "apple-relay.akamaized.net",
+        "apple-relay.fastly-edge.com",
+        "apple-relay.cloudflare.com",
+        "apple-relay.mask.apple-dns.net",
+        "gspe1-ssl.ls.apple.com",
+        "cp4.cloudflare.com",
+        "siri.apple.com",
+        "register.appattest.apple.com",
+        "intelligence.apple.com"
+      ]
+    }
+  ]
+}
