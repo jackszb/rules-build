@@ -1,0 +1,30 @@
+{
+  "version": 4,
+  "rules": [
+    {
+      "domain_suffix": [
+        "weixin.qq.com",
+        "wx.qq.com",
+        "qq.com",
+        "tenpay.com",
+        "wechat.com",
+        "wechatpay.com",
+        "servicewechat.com",
+        "api.weixin.qq.com",
+        "login.weixin.qq.com",
+        "long.weixin.qq.com",
+        "short.weixin.qq.com",
+        "res.wx.qq.com",
+        "wx.gtimg.com",
+        "qpic.cn",
+        "qlogo.cn",
+        "weixinbridge.com",
+        "url.cn",
+        "work.weixin.qq.com",
+        "qyapi.weixin.qq.com",
+        "tencent.com",
+        "myqcloud.com"
+      ]
+    }
+  ]
+}
