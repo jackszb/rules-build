@@ -1,0 +1,50 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain": [
+        "ai.google.dev",
+        "makersuite.google.com",
+        "copilot.microsoft.com",
+        "www.bing.com",
+        "sydney.bing.com",
+        "services.bingapis.com"
+      ],
+      "domain_suffix": [
+        "openai.com",
+        "chatgpt.com",
+        "oaistatic.com",
+        "oaiusercontent.com",
+        "anthropic.com",
+        "claude.ai",
+        "google.com",
+        "google.dev",
+        "deepmind.google",
+        "gemini.google.com",
+        "generativeai.google",
+        "microsoft.com",
+        "microsoftapp.net",
+        "bing.com",
+        "bingapis.com",
+        "cloudflare.com",
+        "livekit.cloud",
+        "statsig.com",
+        "statsigapi.net",
+        "launchdarkly.com",
+        "segment.io",
+        "sentry.io",
+        "intercom.io",
+        "intercomcdn.com",
+        "stripe.com",
+        "arkoselabs.com",
+        "azureedge.net",
+        "azurefd.net",
+        "blob.core.windows.net",
+        "imgix.net",
+        "algolia.net",
+        "auth0.com",
+        "identrust.com"
+      ]
+    }
+  ]
+}
