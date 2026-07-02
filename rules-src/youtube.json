@@ -1,0 +1,21 @@
+{
+  "version": 4,
+  "rules": [
+    {
+      "domain_suffix": [
+        "youtube.com",
+        "youtu.be",
+        "youtube-nocookie.com",
+        "youtubeeducation.com",
+        "youtubekids.com",
+        "youtubegaming.com",
+        "youtubemobilesupport.com",
+        "youtubei.googleapis.com",
+        "googlevideo.com",
+        "ytimg.com",
+        "wide-youtube.l.google.com",
+        "yt.be"
+      ]
+    }
+  ]
+}
