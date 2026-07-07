@@ -1,0 +1,20 @@
+{
+  "version": 4,
+  "rules": [
+    {
+      "domain_suffix": [
+        "youtube.com",
+        "youtu.be",
+        "youtube.com",
+        "m.youtube.com",
+        "music.youtube.com",
+        "youtube-nocookie.com",
+        "youtubei.googleapis.com",
+        "youtube.googleapis.com",
+        "googlevideo.com",
+        "ytimg.com",
+        "ggpht.com"
+      ]
+    }
+  ]
+}
