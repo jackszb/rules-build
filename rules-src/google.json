@@ -28,7 +28,16 @@
         "doubleclick.net",
         "google-analytics.com",
         "googlesyndication.com",
-        "googletagmanager.com"
+        "googletagmanager.com",
+        "github.com",
+        "chatgpt.com",
+        "claude.ai",
+        "sing-box.sagernet.org",
+        "app.cloudcone.com",
+        "dash.cloudflare.com",
+        "mail.google.com",
+        "blog.chaos.run",
+        "lala.im"
       ],
       "domain": [
         "mtalk.google.com",
