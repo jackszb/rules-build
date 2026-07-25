@@ -1,0 +1,19 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "toutiao.com",
+        "toutiaocloud.com",
+        "toutiaopage.com",
+        "toutiaostatic.com",
+        "toutiaovod.com",
+        "toutiaoimg.com",
+        "toutiaoapi.com",
+        "pglstatp-toutiao.com",
+        "snssdk.com",
+        "pstatp.com"
+      ]
+    }
+  ]
+}
