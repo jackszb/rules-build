@@ -1,0 +1,51 @@
+name: Update AdGuard SRS
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 6 * * *'
+    
+env:
+  SINGBOX_VERSION: 1.14.0
+  
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+
+      - name: Install sing-box
+        run: |
+          wget https://github.com/SagerNet/sing-box/releases/download/v${{ env.SINGBOX_VERSION }}/sing-box-${{ env.SINGBOX_VERSION }}-linux-amd64.tar.gz
+          tar -xzf sing-box-${{ env.SINGBOX_VERSION }}-linux-amd64.tar.gz
+          sudo mv sing-box*/sing-box /usr/local/bin/
+          chmod +x /usr/local/bin/sing-box
+
+      - name: Download AdGuard filter.txt
+        run: |
+          curl -fsSL -o filter.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+
+      - name: Convert to SRS
+        id: convert
+        run: |
+          output=$(sing-box rule-set convert --type adguard --output rules/geosite-ads.srs filter.txt 2>&1)
+          echo "$output"
+          ratio=$(echo "$output" | grep -oE '[0-9]+/[0-9]+')
+          echo "ratio=$ratio" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add rules/geosite-ads.srs
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update geosite-ads.srs (parsed rules: ${{ steps.convert.outputs.ratio }})"
+            git push
+          fi
