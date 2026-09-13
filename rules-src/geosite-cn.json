@@ -5,14 +5,11 @@
       "domain": [
         "blzddist1-a.akamaihd.net",
         "cdnstatic.tencentcs.com",
-        "dot.pub",
         "download.jetbrains.com",
         "file-igamecj.akamaized.net",
         "gstore.val.manlaxy.com",
         "images-cn.ssl-images-amazon.com",
         "media.cdn.queniuqe.com",
-        "ocsp.globalsign.com",
-        "ocsp2.globalsign.com",
         "officecdn-microsoft-com.akamaized.net"
       ],
       "domain_suffix": [
