@@ -52,7 +52,9 @@
         "httpsdns.baidu.com",
         "kuaishou.httpdns.pro",
         "lofter.httpdns.c.163.com",
-        "music.httpdns.c.163.com"
+        "music.httpdns.c.163.com",
+        "mcdn.bilivideo.com",
+        "mcdn.bilivideo.cn"
       ]
     }
   ]
