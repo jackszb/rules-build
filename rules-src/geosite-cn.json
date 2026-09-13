@@ -3,11 +3,8 @@
   "rules": [
     {
       "domain": [
-        "acg.tv",
         "blzddist1-a.akamaihd.net",
         "cdnstatic.tencentcs.com",
-        "config.ubnt.com",
-        "dl.ubnt.com",
         "dot.pub",
         "download.jetbrains.com",
         "file-igamecj.akamaized.net",
@@ -91,6 +88,7 @@
         "9xiu.com",
         "abchina.com",
         "accuweather.com",
+        "acg.tv",
         "acgvideo.com",
         "acm.org",
         "acs.org",
