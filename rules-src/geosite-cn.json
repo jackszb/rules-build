@@ -4,7 +4,6 @@
     {
       "domain": [
         "acg.tv",
-        "app.viayoo.com",
         "blzddist1-a.akamaihd.net",
         "cdnstatic.tencentcs.com",
         "config.ubnt.com",
@@ -20,11 +19,8 @@
         "ocsp.globalsign.com",
         "ocsp2.globalsign.com",
         "officecdn-microsoft-com.akamaized.net",
-        "res.viayoo.com",
         "speedtest.macpaw.com",
-        "viayoo.com",
-        "www.layuicdn.com",
-        "www.viayoo.com"
+        "www.layuicdn.com"
       ],
       "domain_suffix": [
         "10010.com",
