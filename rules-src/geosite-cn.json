@@ -18,9 +18,7 @@
         "media.cdn.queniuqe.com",
         "ocsp.globalsign.com",
         "ocsp2.globalsign.com",
-        "officecdn-microsoft-com.akamaized.net",
-        "speedtest.macpaw.com",
-        "www.layuicdn.com"
+        "officecdn-microsoft-com.akamaized.net"
       ],
       "domain_suffix": [
         "10010.com",
