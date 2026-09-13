@@ -2,16 +2,6 @@
   "version": 5,
   "rules": [
     {
-      "domain": [
-        "blzddist1-a.akamaihd.net",
-        "cdnstatic.tencentcs.com",
-        "download.jetbrains.com",
-        "file-igamecj.akamaized.net",
-        "gstore.val.manlaxy.com",
-        "images-cn.ssl-images-amazon.com",
-        "media.cdn.queniuqe.com",
-        "officecdn-microsoft-com.akamaized.net"
-      ],
       "domain_suffix": [
         "10010.com",
         "110.com",
